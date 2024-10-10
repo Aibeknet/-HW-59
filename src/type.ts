@@ -30,3 +30,8 @@ export interface JokeProps {
 export interface JokeListProps {
   jokes: string[];
 }
+
+export interface FetchJokeButtonProps {
+  onFetch: () => void;
+  disabled?: boolean;
+}
