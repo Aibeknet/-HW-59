@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import FilmList from '../../components/FilmList/FilmList.tsx';
+import FilmList from "../../components/FilmList/FilmList.tsx";
 import AddFilm from "../../components/AddFilm/AddFilm";
-import { Film } from '../../type.ts';
+import { Film } from "../../type.ts";
 
 const FilmHub: React.FC = () => {
   const [films, setFilms] = useState<Film[]>([]);
@@ -23,6 +23,8 @@ const FilmHub: React.FC = () => {
       const film = { id: Date.now(), title: newFilm };
       setFilms((prev) => [...prev, film]);
       setNewFilm("");
+    } else {
+      alert("Enter the name of the film.");
     }
   };
 

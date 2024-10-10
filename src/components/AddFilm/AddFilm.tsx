@@ -1,5 +1,5 @@
 import React from "react";
-import { AddFilmProps } from '../../type.ts';
+import { AddFilmProps } from "../../type.ts";
 
 const AddFilm: React.FC<AddFilmProps> = ({ newFilm, setNewFilm, addFilm }) => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {

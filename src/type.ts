@@ -15,7 +15,6 @@ export interface FilmItemProps {
   onDelete: (id: number) => void;
 }
 
-
 export interface FilmListProps {
   films: Film[];
   onEdit: (id: number, title: string) => void;

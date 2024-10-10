@@ -1,6 +1,6 @@
 import React from "react";
 import Joke from "../Joke/Joke";
-import { JokeListProps } from '../../type.ts';
+import { JokeListProps } from "../../type.ts";
 
 const JokeList: React.FC<JokeListProps> = ({ jokes }) => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import { FetchJokeButtonProps } from '../../type.ts';
+import { FetchJokeButtonProps } from "../../type.ts";
 
 const FetchJokeButton: React.FC<FetchJokeButtonProps> = React.memo(
   ({ onFetch, disabled }) => {
