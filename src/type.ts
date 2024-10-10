@@ -9,11 +9,12 @@ export interface AddFilmProps {
   addFilm: () => void;
 }
 
-// export interface MovieItemProps {
-//   movie: Movie;
-//   onEdit: (id: number, title: string) => void;
-//   onDelete: (id: number) => void;
-// }
+export interface FilmItemProps {
+  film: Film;
+  onEdit: (id: number, title: string) => void;
+  onDelete: (id: number) => void;
+}
+
 //
 // export interface MovieListProps {
 //   movies: Movie[];
