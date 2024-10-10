@@ -26,3 +26,7 @@ export interface JokeProps {
   joke: string;
   disabled?: boolean;
 }
+
+export interface JokeListProps {
+  jokes: string[];
+}
