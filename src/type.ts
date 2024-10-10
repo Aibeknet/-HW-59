@@ -5,7 +5,8 @@ export interface Film {
 
 export interface AddFilmProps {
   newFilm: string;
-  setNewFilm: React.Dispatch<React.SetStateAction<string>>;
+  setNewFilm: (film: string) => void;
+  // setNewFilm: React.Dispatch<React.SetStateAction<string>>;
   addFilm: () => void;
 }
 
@@ -15,9 +16,9 @@ export interface FilmItemProps {
   onDelete: (id: number) => void;
 }
 
-//
-// export interface MovieListProps {
-//   movies: Movie[];
-//   onEdit: (id: number, title: string) => void;
-//   onDelete: (id: number) => void;
-// }
+
+export interface FilmListProps {
+  films: Film[];
+  onEdit: (id: number, title: string) => void;
+  onDelete: (id: number) => void;
+}
