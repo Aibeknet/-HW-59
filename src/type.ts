@@ -21,3 +21,8 @@ export interface FilmListProps {
   onEdit: (id: number, title: string) => void;
   onDelete: (id: number) => void;
 }
+
+export interface JokeProps {
+  joke: string;
+  disabled?: boolean;
+}
