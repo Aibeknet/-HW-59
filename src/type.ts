@@ -6,7 +6,6 @@ export interface Film {
 export interface AddFilmProps {
   newFilm: string;
   setNewFilm: (film: string) => void;
-  // setNewFilm: React.Dispatch<React.SetStateAction<string>>;
   addFilm: () => void;
 }
 
